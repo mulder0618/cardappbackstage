@@ -17,10 +17,11 @@
         <p.dubbo.version>2.5.3</p.dubbo.version>
         <p.zookeeper.version>3.4.6</p.zookeeper.version>
         <p.zkclient.version>0.4</p.zkclient.version>
+        <shiro.version>1.2.2</shiro.version>
         <package.target>test</package.target>
     </properties>
 
-    <repositories>
+   <!-- <repositories>
         <repository>
             <id>nexus</id>
             <name>local private nexus</name>
@@ -45,7 +46,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories>-->
 
     <dependencies>
         <!-- springframe start -->
@@ -253,6 +254,28 @@
         </dependency>
         <!-- httpclient end -->
 
+        <!-- Shiro security -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-cas</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <!-- end of Shiro security -->
 
 
     </dependencies>
