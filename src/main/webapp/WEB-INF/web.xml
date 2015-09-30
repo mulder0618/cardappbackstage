@@ -25,7 +25,7 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            classpath:applicationContext-DB.xml;;classpath:applicationContext-shiro.xml
+            classpath:applicationContext-DB.xml;classpath:applicationContext-shiro.xml
         </param-value>
     </context-param>
 
